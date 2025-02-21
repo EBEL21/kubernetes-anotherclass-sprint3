@@ -79,6 +79,7 @@ pipeline {
                 sh "kubectl apply -f ./${CLASS_NUM}/deploy/k8s/db-service-externalname.yaml"
                 sh "kubectl apply -f ./${CLASS_NUM}/deploy/k8s/db-service-headless.yaml"
                 sh "kubectl apply -f ./${CLASS_NUM}/deploy/k8s/db-statefulset.yaml"
+	    	sh "kubectl apply -f ./${CLASS_NUM}/deploy/k8s/pod.yaml"
             }
         }
     }
